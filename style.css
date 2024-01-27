@@ -1,3 +1,140 @@
-html {
-  background-color: blue;
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: 1fr 4fr;
+  gap: 15px;
+  background-color: white;
+}
+#container div {
+  padding: 15px;
+  /* font-size: 15px; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  /* color: white; */
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column: 2/3;
+  background-color: white;
+}
+#searchBar {
+  display: flex;
+  background-color: white;
+  justify-content: stretch;
+}
+#searchBar img {
+  width: 70px;
+}
+#searchBar input {
+  width: 100%;
+  background-color: #e2e8f0;
+  border-radius: 15px;
+}
+
+#connectionStatus {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr minmax(min-content, 1fr);
+  gap: 10px;
+  justify-self: center;
+  justify-content: space-between;
+}
+#connectionStatus img {
+  width: 50px;
+}
+
+#connectionStatus svg {
+  fill: black;
+}
+#userProfile {
+  display: grid;
+  grid-template-columns: 50px minmax(max-content, 1fr);
+  grid-template-rows: min-content min-content;
+  gap: 0px 20px;
+  justify-content: start;
+  align-items: center;
+}
+#userProfile img {
+  grid-row: 1/3;
+  width: 50px;
+}
+
+#hi {
+  align-self: self-end;
+  /* grid-column: 2/3; */
+}
+#userProfileName {
+  align-self: self-start;
+}
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+#buttons button {
+  background-color: #1992d4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+}
+#sidebar {
+  background-color: #1992d4;
+  grid-row: 1/3;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  font-size: x-large;
+}
+#dashboard {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+#dashboard p {
+  justify-self: start;
+}
+svg {
+  fill: white;
+  width: 50px;
+  justify-content: end;
+}
+#nav {
+  display: grid;
+  grid-template-rows: repeat(6, 70px);
+  color: white;
+}
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#branding {
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: repeat(3, 70px);
+  color: white;
+}
+.brandingItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#main-content {
+  background-color: #e2e8f0;
 }
